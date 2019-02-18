@@ -38,10 +38,14 @@
             this.tbTitle = new System.Windows.Forms.TextBox();
             this.rtbBody = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.buttonList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Send
             // 
+            this.Send.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Send.Location = new System.Drawing.Point(376, 290);
             this.Send.Name = "Send";
             this.Send.Size = new System.Drawing.Size(75, 23);
@@ -52,6 +56,9 @@
             // 
             // tbTo
             // 
+            this.tbTo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTo.Location = new System.Drawing.Point(85, 38);
             this.tbTo.Name = "tbTo";
             this.tbTo.Size = new System.Drawing.Size(366, 20);
@@ -90,6 +97,9 @@
             // 
             // tbFrom
             // 
+            this.tbFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbFrom.Location = new System.Drawing.Point(85, 64);
             this.tbFrom.Name = "tbFrom";
             this.tbFrom.Size = new System.Drawing.Size(366, 20);
@@ -106,6 +116,9 @@
             // 
             // tbTitle
             // 
+            this.tbTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTitle.Location = new System.Drawing.Point(85, 90);
             this.tbTitle.Name = "tbTitle";
             this.tbTitle.Size = new System.Drawing.Size(366, 20);
@@ -113,6 +126,9 @@
             // 
             // rtbBody
             // 
+            this.rtbBody.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbBody.Location = new System.Drawing.Point(85, 116);
             this.rtbBody.Name = "rtbBody";
             this.rtbBody.Size = new System.Drawing.Size(366, 168);
@@ -128,11 +144,22 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Treść";
             // 
+            // buttonList
+            // 
+            this.buttonList.Location = new System.Drawing.Point(12, 12);
+            this.buttonList.Name = "buttonList";
+            this.buttonList.Size = new System.Drawing.Size(53, 23);
+            this.buttonList.TabIndex = 10;
+            this.buttonList.Text = "Wybór";
+            this.buttonList.UseVisualStyleBackColor = true;
+            this.buttonList.Click += new System.EventHandler(this.buttonList_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 335);
+            this.Controls.Add(this.buttonList);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.rtbBody);
             this.Controls.Add(this.label4);
@@ -163,6 +190,7 @@
         private System.Windows.Forms.TextBox tbTitle;
         private System.Windows.Forms.RichTextBox rtbBody;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonList;
     }
 }
 

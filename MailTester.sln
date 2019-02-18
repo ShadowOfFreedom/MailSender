@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSender", "MailSender\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{FE2B842F-C87C-4919-B3D6-46CCFC22C674}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonList", "PersonList\PersonList.csproj", "{36C9E769-7197-447A-87B1-B6B521570566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FE2B842F-C87C-4919-B3D6-46CCFC22C674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE2B842F-C87C-4919-B3D6-46CCFC22C674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE2B842F-C87C-4919-B3D6-46CCFC22C674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C9E769-7197-447A-87B1-B6B521570566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C9E769-7197-447A-87B1-B6B521570566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C9E769-7197-447A-87B1-B6B521570566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C9E769-7197-447A-87B1-B6B521570566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,9 +13,22 @@ namespace MailTester
 {
     public partial class MainForm : Form
     {
+        private void showSelectFromList()
+        {
+            using (var personForm = new PersonForm())
+            {
+                if (personForm.ShowDialog() == DialogResult.OK)
+                {
+                    tbTo.Text = string.Join(";", personForm.emailList);
+                }
+
+            }
+        }
+
         public MainForm()
         {
             InitializeComponent();
+            showSelectFromList();
         }
 
         private void SendButton_Click(object sender, EventArgs e)
@@ -51,6 +64,11 @@ namespace MailTester
         private void label1_MouseLeave(object sender, EventArgs e)
         {
             label2.Visible = false;
+        }
+
+        private void buttonList_Click(object sender, EventArgs e)
+        {
+            showSelectFromList();
         }
     }
 }
