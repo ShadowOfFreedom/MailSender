@@ -43,9 +43,7 @@
             // 
             // Send
             // 
-            this.Send.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Send.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Send.Location = new System.Drawing.Point(376, 290);
             this.Send.Name = "Send";
             this.Send.Size = new System.Drawing.Size(75, 23);

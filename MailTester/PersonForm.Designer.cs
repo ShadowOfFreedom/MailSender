@@ -102,6 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(137, 155);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.textBoxCustom);
@@ -109,6 +110,7 @@
             this.Controls.Add(this.radioButtonFirst);
             this.Controls.Add(this.radioButtonAll);
             this.Controls.Add(this.labelPerson);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PersonForm";
