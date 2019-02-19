@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace MailSender
 {
     public class MailModel
     {
+        [EmailAddress]
         public List<string> MailTo { get; } = new List<string>();
+        [EmailAddress(ErrorMessage = "xxx")]
         public string MailFrom { get; }
         public string Title { get; }
         public string Body { get; }
@@ -40,10 +43,15 @@ namespace MailSender
         {
             var temp = emails.Split(';');
             var validation = new EmailAddressAttribute();
+            StringBuilder valid = new StringBuilder();
             foreach (var s in temp)
             {
-                if(!validation.IsValid(s))
-                    throw new IncorrectRecipientException("Incorrect recipient address");
+                if (!validation.IsValid(s))
+                    valid.Append($"{s} ");
+            }
+            if (!string.IsNullOrEmpty(valid.ToString()))
+            {
+                throw new IncorrectRecipientException($"Incorrect recipient address for line: {valid}");
             }
             MailTo.AddRange(temp);
             MailTo.Remove(string.Empty);

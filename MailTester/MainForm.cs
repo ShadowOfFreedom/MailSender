@@ -37,17 +37,16 @@ namespace MailTester
             {
                 MailModel model = new MailModel(tbTo.Text, tbFrom.Text, tbTitle.Text, rtbBody.Text);
 
-                MailService.Send(model);
+                if (!MailService.Send(model))
+                    MessageBox.Show("Mail sent successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (IncorrectRecipientException exception)
             {
                 MessageBox.Show(exception.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbTo.Clear();
             }
             catch (IncorrectSenderException exception)
             {
                 MessageBox.Show(exception.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbFrom.Clear();
             }
             catch (MailServiceException exception)
             {
